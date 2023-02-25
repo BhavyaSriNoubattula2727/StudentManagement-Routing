@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/StudentManagement-Routing/static/css/main.821f0f1c.css",
+    "main.js": "/StudentManagement-Routing/static/js/main.d3996d6d.js",
+    "index.html": "/StudentManagement-Routing/index.html",
+    "main.821f0f1c.css.map": "/StudentManagement-Routing/static/css/main.821f0f1c.css.map",
+    "main.d3996d6d.js.map": "/StudentManagement-Routing/static/js/main.d3996d6d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.821f0f1c.css",
+    "static/js/main.d3996d6d.js"
+  ]
+}
