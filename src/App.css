@@ -1,0 +1,127 @@
+* {
+  margin:0;
+  font-family: sans-serif;
+}
+
+.navbar {
+  background-color: rgb(17, 110, 105);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  position: sticky;
+  left: 0;
+  top: 0;
+  color: white;
+  
+}
+.navbar i{
+  color:rgb(255, 255, 255);
+}
+.navbar .navbar-left{
+  width:50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar .navitem {  
+  font-size: 22px;
+  text-decoration: none;
+}
+
+/* dashboard */
+.dashboard{
+  margin:5% 5% ;
+}
+.box{
+  display: flex;
+}
+.each-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:500px;
+  height:130px;
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.29);
+  margin: 2% 
+}
+
+/* students */
+.students{
+  display: flex;
+  width:100%;
+  justify-content: space-between;
+}
+.students .student-regno{
+  display: flex;
+  flex-direction: column;
+  width:20%;
+  background-color: white;
+  box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+}
+.navlink{
+  text-decoration: none;
+  color:black;
+  font-size: 20px;
+  line-height: 2.5;
+  margin-left:15px;
+}
+.regno:hover{
+  background-color: rgba(189, 189, 189, 0.45);
+  color:black;
+}
+.students .student-data{
+  width:70%;
+}
+.students .student-data button{
+  background-color:rgb(124, 19, 114);
+}
+
+.details{
+  margin:10% 5%
+}
+.boxes{
+  padding:20px 30px;
+  background-color: rgb(177, 199, 218);
+  width:500px;
+  border-radius: 10px;
+  line-height: 2;
+}
+button{
+  padding:10px 40px;
+  border-radius: 4px;
+  border:none;
+  background-color: white;
+  color:black;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.forms{
+  margin:5% 20% 0% 20%;
+  padding:20px 0px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.45); 
+  display: flex;
+  justify-content: center;
+}
+.forms .input-class{
+  width:400px;
+  padding:10px 10px;
+  margin:3% 0%;
+  border:1px solid grey;
+}
+.space{
+  margin-right: 10px;
+}
+.forms button{
+  margin-top: 10px;
+  padding:10px 30px;
+  border:none;
+  color:white;
+  background-color: rgb(161, 98, 174);
+  border-radius: 4px;
+  margin-bottom: 10%;
+}
