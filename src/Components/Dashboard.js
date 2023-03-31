@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Studentdata,Professorsdata,courses } from '../Data/CompleteData';
+import axios from 'axios';
 
 const Dashboard = () => {
+    const [users,setUsers] = useState([]);
+    useEffect(()=>{
+        const url = "http://localhost:5000/users"
+        axios.get(url)
+        .then((res)=>{setUsers(res.data)})
+    },[])
     const statistics =[
         {
             "id":1,
@@ -30,22 +37,36 @@ const Dashboard = () => {
             
         }
     ]
-    
-    return (
-        <div className='dashboard'>
-           <div className='box'>
-                {
-                    statistics.map((item,index)=>{
-                        return(
-                            <div className="each-box" key={index} style={{backgroundColor:item.color}}>
-                                <h3>{item.name}:{item.length}</h3>                                
-                            </div>
-                        )
+
+        return(
+            <div className='dashboard'>
+            <div className='box'>
+                 {
+                     statistics.map((item,index)=>{
+                         return(
+                             <div className="each-box" key={index} style={{backgroundColor:item.color}}>
+                                 <h3>{item.name}:{item.length}</h3>                                
+                             </div>
+                         )
+                     })
+                 }
+            </div>
+            <div>
+                 <table border={1}>
+                    <thead>
+                        <tr><td>ID</td><td>NAME</td></tr>
+                    </thead>
+                    <tbody>
+                    {
+                    users.map((item,index)=>{
+                        return(<tr key={index}><td>{item.id}</td><td>{item.name}</td></tr>)
                     })
-                }
-           </div>          
-        </div>
-    );
+                    }
+                    </tbody>
+                 </table>
+            </div>          
+            </div>
+        )
 };
 
 export default Dashboard;

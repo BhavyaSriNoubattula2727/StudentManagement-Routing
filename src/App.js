@@ -9,6 +9,7 @@ import StudentDetails from './Components/StudentDetails';
 import Login from './Components/Login'
 import PagenotFound from './Components/PagenotFound';
 
+
 function App() {
   return (
     <div>
@@ -20,10 +21,9 @@ function App() {
         </Route>
         <Route path="courses" element={<Courses />} />
         <Route path="grades" element={<Grades />} />
-        <Route path="login" element={<Login />} />
+        <Route path="login" element={<Login/>} />
         <Route path="*" element={<PagenotFound />} />
       </Routes>
-
     </div>
   );
 }
